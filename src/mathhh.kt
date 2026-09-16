@@ -7,7 +7,7 @@ class mathhh : iinterface {
     override fun proiz(a: Double, b: Double): Double = a * b
     override fun del(a: Double, b: Double): Double = if (b != 0.0) a / b else throw ArithmeticException("Деление на ноль")
 
-    private fun toRadians(degrees: Double): Double = degrees * PI / 180.0
+    private fun toRadians(a: Double): Double = a * PI / 180.0
 
     override fun sin(a: Double): Double = kotlin.math.sin(toRadians(a))
     override fun cos(a: Double): Double = kotlin.math.cos(toRadians(a))
